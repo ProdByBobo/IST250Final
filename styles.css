@@ -2,6 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+.concert-image {
+    width: 100%; /* Make images responsive */
+    max-width: 1000px; /* Set a maximum width for all images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better appearance */
 }
 
 header {
@@ -15,6 +25,11 @@ header nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    background-color: #333;
+    
+}
+header nav ul {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the nav */
 }
 
 header nav ul li {
@@ -24,8 +39,17 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect with filter */
+header nav ul li a:hover {
+    filter: brightness(1.5); /* Makes the button brighter on hover */
+    background-color: #555; /* Optional: Add a background color change */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
 footer {
     background-color: #333;
     color: white;
@@ -34,4 +58,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+img {
+    display: block;
+    margin: 0 auto;
 }
