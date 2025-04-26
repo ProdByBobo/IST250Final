@@ -62,3 +62,78 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+/* Smartphones (max-width: 576px) */
+@media (max-width: 576px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .cover-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .cover-container p {
+        font-size: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        margin: 0.5em;
+    }
+
+    .cover-container h1 {
+        font-size: 2rem;
+    }
+
+    .cover-container p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+}
+
+/* Laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .cover-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .cover-container p {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .table {
+        font-size: 1rem;
+    }
+}

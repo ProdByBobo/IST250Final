@@ -25,6 +25,27 @@
         #album-table {
             margin: 50px;
         }
+        .card.now-playing {
+            position: relative;
+            border: 2px solid #ff0000; /* Optional: Highlight the card */
+        }
+
+        .card.now-playing::after {
+            content: "Now Playing";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
 
     </style>
 </head>
@@ -47,20 +68,26 @@
                 <!-- Album 1 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://preview.redd.it/uzi-album-ranking-lir-v0-a47sgc70146c1.jpg?width=640&crop=smart&auto=webp&s=e85b2e311de61c1a325603d651665fd832571397" class="card-img-top" alt="LUV is Rage">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/LilUziVertVsTheWorld.jpg" 
+                             class="card-img-top album-image" 
+                             alt="Lil Uzi Vert vs. the World" 
+                             data-audio="audio/scottandramona.mp3">
                         <div class="card-body">
-                            <h5 class="card-title">LUV is Rage</h5>
+                            <h5 class="card-title">Lil Uzi Vert vs. the World</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
-                            <p class="card-text">Release Year: 2015</p>
+                            <p class="card-text">Release Year: 2016</p>
                         </div>
                     </div>
                 </div>
                 <!-- Album 2 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/LilUziVertVsTheWorld.jpg" class="card-img-top" alt="Lil Uzi Vert vs the World">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/80/The_Perfect_Luv_Tape_by_Lil_Uzi_Vert.jpg" 
+                             class="card-img-top album-image" 
+                             alt="The Perfect LUV Tape" 
+                             data-audio="audio/icandrive.mp3">
                         <div class="card-body">
-                            <h5 class="card-title">Lil Uzi Vert vs the World</h5>
+                            <h5 class="card-title">The Perfect LUV Tape</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2016</p>
                         </div>
@@ -69,18 +96,24 @@
                 <!-- Album 3 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/8/80/The_Perfect_Luv_Tape_by_Lil_Uzi_Vert.jpg" class="card-img-top" alt="Perfect Luv Tape">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/54/Luv_Is_Rage_Cover.jpg" 
+                             class="card-img-top album-image" 
+                             alt="LUV is Rage" 
+                             data-audio="audio/nnat21.mp3">
                         <div class="card-body">
-                            <h5 class="card-title">Perfect Luv Tape</h5>
+                            <h5 class="card-title">LUV is Rage</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
-                            <p class="card-text">Release Year: 2016</p>
+                            <p class="card-text">Release Year: 2015</p>
                         </div>
                     </div>
                 </div>
                 <!-- Album 4 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Luv_Is_Rage_2_cover.jpg" class="card-img-top" alt="LUV is Rage 2">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/65/Luv_Is_Rage_2_cover.jpg" 
+                             class="card-img-top album-image" 
+                             alt="LUV is Rage 2" 
+                             data-audio="audio/lir2xotour.mp3">
                         <div class="card-body">
                             <h5 class="card-title">LUV is Rage 2</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
@@ -91,7 +124,10 @@
                 <!-- Album 5 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Eternal_Atake_Lil_Uzi_Vert.jpg" class="card-img-top" alt="Eternal Atake">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Eternal_Atake_Lil_Uzi_Vert.jpg" 
+                             class="card-img-top album-image" 
+                             alt="Eternal Atake" 
+                             data-audio="audio/lomein.mp3">
                         <div class="card-body">
                             <h5 class="card-title">Eternal Atake</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
@@ -102,7 +138,10 @@
                 <!-- Album 6 -->
                 <div class="col">
                     <div class="card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/Lil_Uzi_Vert_-_Pink_Tape.png" class="card-img-top" alt="Pink Tape">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/Lil_Uzi_Vert_-_Pink_Tape.png" 
+                             class="card-img-top album-image" 
+                             alt="Pink Tape" 
+                             data-audio="audio/x2-pinktape.mp3">
                         <div class="card-body">
                             <h5 class="card-title">Pink Tape</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
@@ -238,7 +277,6 @@
     <footer class="text-center py-3">
         <p>&copy; 2025 Non-Official Lil Uzi Vert Website</p>
     </footer>
-    <!-- Add Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="audio.js"></script>
 </body>
 </html>
