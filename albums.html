@@ -46,6 +46,25 @@
             justify-content: center;
             z-index: 10;
         }
+        .card.paused {
+            border: 2px solid #ff0000; /* Optional: Highlight the card */
+        }
+        .card.paused::after {
+            content: "Paused";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
 
     </style>
 </head>
@@ -84,6 +103,7 @@
                             <h5 class="card-title">Lil Uzi Vert vs. the World</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2016</p>
+                            <p class="card-text">Favorite Track: Scott and Ramona</p>
                         </div>
                     </div>
                 </div>
@@ -98,6 +118,7 @@
                             <h5 class="card-title">The Perfect LUV Tape</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2016</p>
+                            <p class="card-text">Favorite Track: I Can Drive</p>
                         </div>
                     </div>
                 </div>
@@ -112,6 +133,7 @@
                             <h5 class="card-title">LUV is Rage</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2015</p>
+                            <p class="card-text">Favorite Track: Nuyork Nights at 21</p>
                         </div>
                     </div>
                 </div>
@@ -126,6 +148,7 @@
                             <h5 class="card-title">LUV is Rage 2</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2017</p>
+                            <p class="card-text">Favorite Track: XO TOUR Llif3</p>
                         </div>
                     </div>
                 </div>
@@ -140,6 +163,7 @@
                             <h5 class="card-title">Eternal Atake</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2020</p>
+                            <p class="card-text">Favorite Track: Lo Mein</p>
                         </div>
                     </div>
                 </div>
@@ -154,6 +178,7 @@
                             <h5 class="card-title">Pink Tape</h5>
                             <p class="card-text">Artist: Lil Uzi Vert</p>
                             <p class="card-text">Release Year: 2023</p>
+                            <p class="card-text">Favorite Track: X2</p>
                         </div>
                     </div>
                 </div>
